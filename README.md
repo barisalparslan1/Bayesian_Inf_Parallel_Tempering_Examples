@@ -103,7 +103,7 @@ Parallel tempering achieves:
 
 ### Model
 
-Unidentifiable Gaussian with \alpha^2
+Non-identifiable Gaussian with \alpha^2
 
 ### Challenge
 

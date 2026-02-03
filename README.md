@@ -2,7 +2,7 @@
 
 This repository demonstrates **Parallel Tempering (Metropolis-Coupled) Markov Chain Monte Carlo (MCMC)** methods and illustrates why they are superior to standard Metropolis–Hastings (MH) sampling in the presence of **multi-modal posterior distributions**.
 
-The examples are designed to be simple, pedagogical, and reproducible, focusing on how coupling multiple chains at different temperatures improves **mixing**, **exploration**, and **convergence**.
+The examples are designed to be simple and reproducible, focusing on how coupling multiple chains at different temperatures improves **mixing**, **exploration**, and **convergence**.
 
 ---
 

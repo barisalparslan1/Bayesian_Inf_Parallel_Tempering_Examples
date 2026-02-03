@@ -70,14 +70,6 @@ By introducing multiple chains with different temperatures and allowing **state 
 
 A two-component Gaussian mixture:
 
-\[
-X =
-\begin{cases}
-Z_1 \sim \mathcal{N}(\theta_1, \sigma^2), & \text{with probability } 0.5 \\
-Z_2 \sim \mathcal{N}(\theta_2, \sigma^2), & \text{with probability } 0.5
-\end{cases}
-\]
-
 - True parameters: \( \theta_1 = 6 \), \( \theta_2 = -6 \)
 - Known variance: \( \sigma^2 = 1 \)
 - Priors:
@@ -93,9 +85,8 @@ A single MH chain:
 ### Parallel Tempering Setup
 
 - 5 chains with temperature parameters:
-  \[
   (0.1, 0.3, 0.5, 0.7, 1)
-  \]
+
 - Only **state swaps** are performed (no heat transfer)
 - Inference uses the cold chain only
 
@@ -112,15 +103,7 @@ Parallel tempering achieves:
 
 ### Model
 
-\[
-X_i \sim \mathcal{N}(\alpha^2 \beta + \epsilon, 1), \quad \epsilon \sim \mathcal{N}(0, 1)
-\]
-
-- True values: \( \alpha = 3 \), \( \beta = 2 \)
-- Symmetry in \( \alpha \) induces multi-modality
-- Priors:
-  - \( \alpha \sim \text{Unif}(-10, 10) \)
-  - \( \beta \sim \text{Unif}(0, 10) \)
+Unidentifiable Gaussian with \alpha^2
 
 ### Challenge
 
